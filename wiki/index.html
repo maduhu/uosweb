@@ -1,0 +1,33 @@
+<!doctype html>
+<html class="no-js" ng-app="wikiApp">
+<head>
+    <meta charset="utf-8">
+    <title>UOS Web Tutorial</title>
+    <meta name="description" content="UOS Web Application Bootstrap">
+    <meta name="keywords" content="business,asp.net,development,initiative,facebook,twitter,Microsoft,HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Umbiliko">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="http://uosweb.com/content/css/wiki.css">
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-resource.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-cookies.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-sanitize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-animate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-touch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+    <script src="showdown.js"></script>
+</head>
+<body class="wiki" ng-controller="wikiCtrl">
+    <!--<label for="index-toggle"><span class="checkbox"></span><span class="text">Hide Index</span></label>
+    <input id="index-toggle" type="checkbox"/>-->
+    <div class="index">
+        <h1>Tutorial</h1>
+        <ul id="index" data-tree-id="index" data-tree-model="index.items" data-node-id="asset" data-node-label="title" data-node-children="items" ng-index="true"></ul>
+    </div>
+    <div class="content" ng-include="path" ng-mark-down></div>
+    <div class="resizer" resizer-left=".index" resizer-right=".content" resizer-max="400" ng-resizer></div>
+    <script src="wiki.js"></script>
+</body>
+</html>

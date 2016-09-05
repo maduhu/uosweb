@@ -1,0 +1,40 @@
+body{
+    background: url('../images/pattern.png');
+}
+
+section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 0 20px 20px 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+#main-nav {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+#main-nav li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#main-nav li a {
+    display: block;
+}
+
+#to-top-link {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    background-color: #999;
+    padding:  10px;
+}
+
+#to-top-link a {
+    color: #fff;
+}

@@ -1,0 +1,1 @@
+# Cool Wiki
